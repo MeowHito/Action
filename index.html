@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 
-<html lang="th"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Action | ครบเครื่องเรื่องการแข่งขัน</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Action | ครบเครื่องเรื่องการแข่งขัน</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         * {
             font-family: 'Prompt', sans-serif;
         }
+
         body {
             background-color: #ffffff;
             color: #1f2937;
             scroll-behavior: smooth;
         }
+
         .text-gradient {
             background: linear-gradient(135deg, #1e40af 0%, #6d28d9 40%, #be185d 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .shadow-soft {
-            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.04);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.04);
         }
+
         .shadow-sophisticated {
             box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.06);
         }
+
         .bg-glass {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
         }
+
         .feature-card:hover .icon-box {
             transform: scale(1.05);
         }
-        .mockup-gradient-1 { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
-        .mockup-gradient-2 { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); }
-        .mockup-gradient-3 { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
-        
+
+        .mockup-gradient-1 {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+        }
+
+        .mockup-gradient-2 {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+
+        .mockup-gradient-3 {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+
         section {
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
+
         @media (min-width: 768px) {
             section {
                 padding-top: 8rem;
@@ -50,367 +71,465 @@
         }
     </style>
 </head>
+
 <body class="antialiased selection:bg-blue-100 selection:text-blue-900">
-<!-- Navigation -->
-<nav class="flex justify-between items-center px-6 md:px-12 py-4 bg-glass border-b border-gray-100/50 sticky top-0 z-[100]">
-<div class="flex items-center gap-2">
-<img alt="Action Logo" class="h-9 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqzlBTUQRPKpjxwv697ePfT7QHWPebaTDakPnl4I0vgWcKLxwEas3H_LBAW3kkJdfUm22Jx7Ye0PvFEK1O8mY2_N-SZahyYhUk-W0r-iyVUXx7P-AxGJ9wE6Giymld7pxVrKuww15DFwAihy3DFE8B3U29HKTs3a6fFb9iku1voVRaqfSY2ZXXlhKNsowFXBTRoOvDw-_ZnGbYouykVvrORfsCkirZtxv3mJjgBm_ROcd_EsQ2WepiV6EeFlUYV2-4r_eTLeOWuko"/>
-<span class="text-xl font-bold tracking-tight text-gray-900">ACTION</span>
-</div>
-<div class="hidden lg:flex gap-10 text-gray-600 font-medium">
-<a class="flex items-center gap-2 hover:text-blue-600 transition-all" href="https://register.action.in.th/" target="_blank">
-<span class="material-symbols-outlined text-xl">app_registration</span>
-                Register
-            </a>
-<a class="flex items-center gap-2 hover:text-purple-600 transition-all" href="https://photo.action.in.th/" target="_blank">
-<span class="material-symbols-outlined text-xl">photo_camera</span>
-                Photo
-            </a>
-<a class="flex items-center gap-2 hover:text-green-600 transition-all" href="https://live.action.in.th/" target="_blank">
-<span class="material-symbols-outlined text-xl">leaderboard</span>
-                Live Result
-            </a>
-</div>
-<div>
-<a class="bg-gray-900 hover:bg-blue-600 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-gray-200 active:scale-95" href="mailto:action.in.th@gmail.com">
-                ติดต่อเรา
-            </a>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative !pt-16 !pb-24 px-4 overflow-hidden">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
-<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-50 rounded-full blur-[120px] opacity-60"></div>
-<div class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-purple-50 rounded-full blur-[100px] opacity-60"></div>
-</div>
-<div class="max-w-6xl mx-auto text-center relative z-10">
-<div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-8 border border-blue-100 shadow-sm">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-</span>
-                แพลตฟอร์มจัดการการแข่งขันกีฬาครบวงจร
+    <!-- Navigation -->
+    <nav class="bg-glass border-b border-gray-100/50 fixed top-0 inset-x-0 z-[100]">
+        <div class="flex justify-between items-center px-6 md:px-12 py-4">
+            <div class="flex items-center gap-2">
+                <img alt="/img/ACTION LOGO 1 Black.png" class="h-9 w-auto"
+                    src="/img/ACTION LOGO 1 Black.png" />
             </div>
-<h1 class="text-4xl md:text-7xl font-bold mb-8 leading-[1.15] text-gray-900 tracking-tight">
-                ยกระดับงานวิ่งของคุณด้วย <br/>
-<span class="text-gradient">ระบบการจัดการที่ดีกว่า</span></h1>
-<div class="text-gray-500 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-<p>ดูแลครบทุกด้านของงานกีฬา ตั้งแต่สมัครใช้งาน ค้นหาภาพด้วย AI <br class="hidden md:block"/>ระบบผลการแข่งขันด้วย RFID แบบเรียลไทม์</p>
-</div>
-<div class="flex flex-col sm:flex-row justify-center gap-5">
-<a class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-xl shadow-blue-200 hover:-translate-y-1" href="https://register.action.in.th/">
-                    เริ่มต้นใช้งานทันที
+            <div class="hidden lg:flex gap-10 text-gray-600 font-medium">
+                <a class="flex items-center gap-2 hover:text-blue-600 transition-all" href="https://register.action.in.th/"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-xl">app_registration</span>
+                    Register
                 </a>
-<a class="bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-gray-300 px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-sm" href="#services">
-                    ดูบริการของเรา
+                <a class="flex items-center gap-2 hover:text-purple-600 transition-all" href="https://photo.action.in.th/"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-xl">photo_camera</span>
+                    Photo
                 </a>
-</div>
-<!-- Stats Bar -->
-<div class="mt-24 p-1 bg-white/50 border border-white/50 backdrop-blur-sm rounded-[40px] max-w-5xl mx-auto">
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white/80 rounded-[36px] shadow-soft py-10">
-<div class="border-r border-gray-100 last:border-0">
-<div class="text-4xl font-bold text-gray-900 mb-1">1M+</div>
-<div class="text-sm font-medium text-blue-500 uppercase tracking-wider">นักวิ่งในระบบ</div>
-</div>
-<div class="border-r border-gray-100 last:border-0">
-<div class="text-4xl font-bold text-gray-900 mb-1">5,000+</div>
-<div class="text-sm font-medium text-purple-500 uppercase tracking-wider">งานที่ครอบคลุม</div>
-</div>
-<div class="border-r border-gray-100 last:border-0 sm:border-r-0 lg:border-r">
-<div class="text-4xl font-bold text-gray-900 mb-1">99%</div>
-<div class="text-sm font-medium text-green-500 uppercase tracking-wider">ความพึงพอใจ</div>
-</div>
-<div>
-<div class="text-4xl font-bold text-gray-900 mb-1">24/7</div>
-<div class="text-sm font-medium text-orange-500 uppercase tracking-wider">การสนับสนุน</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="!py-20 px-4 max-w-7xl mx-auto" id="services">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 tracking-tight transition-all duration-700 opacity-100 translate-y-0">บริการหลักจาก Action</h2>
-<p class="text-gray-500 text-lg max-w-2xl mx-auto font-light leading-relaxed">เทคโนโลยีที่ผสานกับประสบการณ์ เพื่อส่งมอบผลลัพธ์ที่ดีที่สุดสำหรับคุณ</p>
-</div>
-<div class="grid lg:grid-cols-3 gap-8">
-<!-- Register Card -->
-<div class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-blue-100 transition-all duration-500 flex flex-col">
-<div class="flex items-center gap-4 mb-5">
-<div class="icon-box w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
-<span class="material-symbols-outlined text-2xl font-light">edit_note</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900">Action Register</h3>
-</div>
-<p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
-    ระบบรับสมัครที่ออกแบบมาเพื่อความเสถียร รองรับคนจำนวนมาก จัดการไซส์เสื้อและชำระเงินอัตโนมัติ
-</p>
-<a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-blue-600 hover:gap-3 transition-all" href="https://register.action.in.th/" target="_blank">
-    เข้าสู่ระบบรับสมัคร <span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-</div>
-<!-- Photo Card -->
-<div class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-purple-100 transition-all duration-500 flex flex-col">
-<div class="flex items-center gap-4 mb-5">
-<div class="icon-box w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
-<span class="material-symbols-outlined text-2xl font-light">face_6</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900">Action Photo</h3>
-</div>
-<p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
-    ใช้ขุมพลัง AI จดจำใบหน้าและหมายเลขบิบ เพื่อให้นักวิ่งค้นหาภาพของตัวเองได้ในไม่กี่วินาที
-</p>
-<a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-purple-600 hover:gap-3 transition-all" href="https://photo.action.in.th/" target="_blank">
-    เข้าสู่ระบบค้นหาภาพ <span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-</div>
-<!-- Result Card -->
-<div class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-green-100 transition-all duration-500 flex flex-col">
-<div class="flex items-center gap-4 mb-5">
-<div class="icon-box w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
-<span class="material-symbols-outlined text-2xl font-light">timer</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900">Action Result</h3>
-</div>
-<p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
-    เชื่อมต่อ Chip Timing รายงานผลทันที พร้อมระบบ e-Certificate สวยงามดาวน์โหลดได้ทันใจ
-</p>
-<a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-green-600 hover:gap-3 transition-all" href="https://live.action.in.th/" target="_blank">
-    เข้าสู่ระบบดูผลการแข่งขัน <span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Detail Sections with Mockups -->
-<section class="bg-gray-50/50 space-y-24 overflow-hidden">
-<!-- Feature 1 -->
-<div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
-<div class="flex-1 space-y-8">
-<div class="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase">Smart Register</div>
-<h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">จัดการง่ายตั้งแต่รับสมัคร</h2>
-<p class="text-gray-600 text-lg leading-relaxed font-light">
-    ระบบหลังบ้านที่ทรงพลัง ช่วยให้คุณเห็นข้อมูลสรุปยอดผู้สมัครแบบวินาทีต่อวินาที จัดการเรื่องการเงินที่ซับซ้อนให้เป็นเรื่องง่ายด้วยระบบตรวจสอบสลิปอัตโนมัติ
-</p>
-<div class="space-y-4">
-<div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
-<div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">check</span>
-</div>
-<span class="font-medium text-gray-700">ระบบชำระเงินและยืนยันยอดอัตโนมัติ 100%</span>
-</div>
-<div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
-<div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">insights</span>
-</div>
-<span class="font-medium text-gray-700">แดชบอร์ดสรุปสถิติ ไซส์เสื้อ และรายได้แบบ Real-time</span>
-</div>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="mockup-gradient-1 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
-<div class="bg-white rounded-xl shadow-lg border border-blue-50 w-full aspect-[4/3] p-6 space-y-4 transform group-hover:scale-[1.02] transition-transform duration-700">
-<div class="flex justify-between items-center mb-6">
-<div class="h-4 w-32 bg-gray-100 rounded-full"></div>
-<div class="h-8 w-8 bg-blue-500 rounded-lg"></div>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="h-24 bg-blue-50 rounded-xl flex flex-col justify-center px-4">
-<div class="h-2 w-12 bg-blue-200 rounded-full mb-3"></div>
-<div class="h-4 w-20 bg-blue-400 rounded-full"></div>
-</div>
-<div class="h-24 bg-gray-50 rounded-xl flex flex-col justify-center px-4">
-<div class="h-2 w-12 bg-gray-200 rounded-full mb-3"></div>
-<div class="h-4 w-16 bg-gray-300 rounded-full"></div>
-</div>
-</div>
-<div class="space-y-3 pt-4">
-<div class="h-3 w-full bg-gray-100 rounded-full"></div>
-<div class="h-3 w-[90%] bg-gray-100 rounded-full"></div>
-<div class="h-3 w-[70%] bg-gray-100 rounded-full"></div>
-</div>
-</div>
-<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-400/20 blur-2xl rounded-full"></div>
-</div>
-</div>
-</div>
-<!-- Feature 2 -->
-<div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
-<div class="flex-1 space-y-8 text-right lg:text-left">
-<div class="text-purple-600 font-bold tracking-[0.2em] text-sm uppercase">AI Technology</div>
-<h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">ค้นหาภาพไวด้วยระบบ AI</h2>
-<p class="text-gray-600 text-lg leading-relaxed font-light">
-    หมดปัญหาการเลื่อนหารูปภาพทีละใบ ระบบประมวลผล AI ตรวจจับใบหน้าและหมายเลขบิบได้อย่างแม่นยำ พร้อมระบบจำหน่ายภาพที่ง่ายที่สุด
-</p>
-<div class="space-y-4">
-<div class="flex items-center lg:flex-row-reverse gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:-translate-x-2 lg:hover:translate-x-2">
-<div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">camera</span>
-</div>
-<span class="font-medium text-gray-700">ตรวจจับใบหน้าและเบอร์บิบแม่นยำสูง แม้แสงน้อย</span>
-</div>
-<div class="flex items-center lg:flex-row-reverse gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:-translate-x-2 lg:hover:translate-x-2">
-<div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">cloud_download</span>
-</div>
-<span class="font-medium text-gray-700">สั่งซื้อและรับภาพความละเอียดสูงทันทีผ่านระบบ</span>
-</div>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="mockup-gradient-2 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
-<div class="bg-white rounded-xl shadow-lg overflow-hidden w-full aspect-[4/3] transform group-hover:scale-[1.02] transition-transform duration-700 relative">
-<div class="p-4 border-b border-gray-50 flex gap-2">
-<div class="w-full h-8 bg-gray-50 rounded-lg border border-gray-100 flex items-center px-3 gap-2">
-<span class="material-symbols-outlined text-sm text-gray-400">search</span>
-<div class="h-2 w-20 bg-gray-200 rounded-full"></div>
-</div>
-</div>
-<div class="grid grid-cols-3 gap-2 p-3">
-<div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
-<img alt="mockup" class="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMz7SUXQXyBrBayq9u2mquGQAa99eKffYRe-DUOWlPWM4GEfXAgtw7zHPbgQQEJxVtAI2sA-MKWXPmEZuBfRtHZb0Kp29mzAi8SqOHQ_n7_fOI5DqUuyE4NqPY2j7gZRMEcbkzmGZkY53KuDCS2dd-I682KFP7hjvM7GoLzW6AyUZnhSwaBkMvxvcbi1zqGR_gfhCMHg6zeF8fTFAO1bxO8XlLYHD1OUqEtBn4JOPzXkJ5Jiw-nAx9j_6IMPH84d4YIc-69gbWqs"/>
-<div class="absolute inset-0 border-2 border-purple-400 m-2 rounded"></div>
-</div>
-<div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
-<img alt="mockup" class="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsQaUAdF7xYVlfiA6eqJY63gTugYRPmyERDeShRyxjFiDptbECyJej5V-cOqJbzLQ6v2PbmFbAnVGi0BwByDrURhbBHmZBUJJXKFphXUBmQpLYWq6IxFUHqytnOPwV5rUh89MbbL_dLPkOoruWeYL-asKxj6iIdUisfm3YND1zKGSvwmS_OlBDrES0e0dy-HBeP8fDyBgMqKsSgGm8MQBCOwrSH40Z9M8dYO3FI6dSVFKNg6269sswVD-F5_XQaEIMseIRI8wyxDc"/>
-<div class="absolute inset-0 border-2 border-purple-400 m-2 rounded"></div>
-</div>
-<div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
-<img alt="mockup" class="object-cover w-full h-full opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5MlpXshD3VGL5eGH808EZdi2YEry7Iz404aeUk37OHNsC-tO40JbSFkLqduBe6B3vE-5SNkfLVfsTUEMnfuFUVfGnoPqfvYFIBe3X7uV1-M7dsthwxm5FFiWt5GKnJDVrvFYjXds9JVWWZcV1n9hnNPU1KezxZ6QfFw5nKZRObupGVigcLWo9wMDD66em0TKn68cv0uuKuwNp7wisgQjegn7JJMQvphUI8WMHRvXTKE0EP8w5i6amzTeSEKL1UUU9TYU_YplGIc8"/>
-</div>
-<div class="aspect-square bg-gray-100 rounded-lg"></div>
-<div class="aspect-square bg-gray-100 rounded-lg"></div>
-<div class="aspect-square bg-gray-100 rounded-lg"></div>
-</div>
-<div class="absolute top-24 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-3 py-1.5 rounded-full text-[10px] font-bold shadow-lg animate-bounce">
+                <a class="flex items-center gap-2 hover:text-green-600 transition-all" href="https://live.action.in.th/"
+                    target="_blank">
+                    <span class="material-symbols-outlined text-xl">leaderboard</span>
+                    Live Result
+                </a>
+            </div>
+            <div>
+                <div>
+                    <a class="bg-gray-900 hover:bg-blue-600 text-white px-4 md:px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-gray-200 active:scale-95 text-sm md:text-base"
+                        href="#contact">
+                        ติดต่อเรา
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="lg:hidden px-4 pb-4">
+            <div class="grid grid-cols-3 bg-white/90 rounded-[2rem] shadow-soft border border-gray-100 overflow-hidden">
+                <a class="flex flex-col items-center justify-center gap-2 py-4 text-gray-600 font-medium text-sm hover:bg-blue-50/70 transition-all"
+                    href="https://register.action.in.th/" target="_blank">
+                    <span class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[22px]">app_registration</span>
+                    </span>
+                    <span>Register</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-2 py-4 text-gray-600 font-medium text-sm border-x border-gray-100 hover:bg-purple-50/70 transition-all"
+                    href="https://photo.action.in.th/" target="_blank">
+                    <span class="w-12 h-12 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[22px]">photo_camera</span>
+                    </span>
+                    <span>Photo</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-2 py-4 text-gray-600 font-medium text-sm hover:bg-green-50/70 transition-all"
+                    href="https://live.action.in.th/" target="_blank">
+                    <span class="w-12 h-12 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[22px]">leaderboard</span>
+                    </span>
+                    <span>Live Result</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative !pt-40 md:!pt-28 !pb-8 md:!pb-24 px-4 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+            <div
+                class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-50 rounded-full blur-[120px] opacity-60">
+            </div>
+            <div
+                class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-purple-50 rounded-full blur-[100px] opacity-60">
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+
+            <h1 class="text-3xl sm:text-4xl md:text-7xl font-bold mb-8 leading-[1.5] md:leading-[1.4] text-gray-900 tracking-tight">
+                ยกระดับงานของคุณด้วย <br />
+                <span class="text-gradient">ระบบการจัดการที่ดีกว่า</span>
+            </h1>   
+            
+            <div class="text-gray-500 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                <p>ดูแลครบทุกด้านของงานกีฬา ตั้งแต่สมัครใช้งาน ค้นหาภาพด้วย AI <br
+                        class="hidden md:block" />ระบบผลการแข่งขันด้วย RFID แบบเรียลไทม์</p>
+            </div>
+            
+            <!-- Stats Bar -->
+            <div class="mt-1 p-1 bg-white/50 border border-white/50 backdrop-blur-sm rounded-[32px] max-w-5xl mx-auto">
+                <div class="grid grid-cols-4 gap-2 bg-white/80 rounded-[28px] shadow-soft py-5 px-2 md:px-0">
+                    <div class="px-1 md:px-4 border-r border-gray-100 last:border-0 text-center">
+                        <div class="text-lg md:text-4xl font-bold text-gray-900 mb-1">1M+</div>
+                        <div class="text-[10px] md:text-sm font-medium text-blue-500 uppercase tracking-tight md:tracking-wider">นักวิ่งในระบบ</div>
+                    </div>
+                    <div class="px-1 md:px-4 border-r border-gray-100 last:border-0 text-center">
+                        <div class="text-lg md:text-4xl font-bold text-gray-900 mb-1">5,000+</div>
+                        <div class="text-[10px] md:text-sm font-medium text-purple-500 uppercase tracking-tight md:tracking-wider">งานที่ครอบคลุม</div>
+                    </div>
+                    <div class="px-1 md:px-4 border-r border-gray-100 last:border-0 text-center">
+                        <div class="text-lg md:text-4xl font-bold text-gray-900 mb-1">99%</div>
+                        <div class="text-[10px] md:text-sm font-medium text-green-500 uppercase tracking-tight md:tracking-wider">ความพึงพอใจ</div>
+                    </div>
+                    <div class="px-1 md:px-4 text-center">
+                        <div class="text-lg md:text-4xl font-bold text-gray-900 mb-1">24/7</div>
+                        <div class="text-[10px] md:text-sm font-medium text-orange-500 uppercase tracking-tight md:tracking-wider">ออนไลน์</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="!py-20 px-4 max-w-7xl mx-auto" id="services">
+        <div class="text-center mb-16">
+            <h2
+                class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 tracking-tight transition-all duration-700 opacity-100 translate-y-0">
+                บริการหลักจาก Action</h2>
+            <p class="text-gray-500 text-lg max-w-2xl mx-auto font-light leading-relaxed">เทคโนโลยีที่ผสานกับประสบการณ์
+                เพื่อส่งมอบผลลัพธ์ที่ดีที่สุดสำหรับคุณ</p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Register Card -->
+            <div
+                class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-blue-100 transition-all duration-500 flex flex-col">
+                <img class="overflow-hidden rounded-2xl w-full object-cover" src="/img/Register.png" alt="">
+                <br>
+                <div class="flex items-center gap-4 mb-5">
+                    <div
+                        class="icon-box w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl font-light">edit_note</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Action Register</h3>
+                </div>
+                <p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
+                    ระบบรับสมัครที่ออกแบบมาเพื่อความเสถียร รองรับคนจำนวนมาก จัดการไซส์เสื้อและชำระเงินอัตโนมัติ
+                </p>
+                <a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-blue-600 hover:gap-3 transition-all"
+                    href="https://register.action.in.th/" target="_blank">
+                    เข้าสู่ระบบรับสมัคร <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Photo Card -->
+            <div
+                class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-purple-100 transition-all duration-500 flex flex-col">
+                <img class="overflow-hidden rounded-2xl w-full object-cover" src="/img/Photo.png" alt="">
+                <br>
+                <div class="flex items-center gap-4 mb-5">
+                    <div
+                        class="icon-box w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl font-light">face_6</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Action Photo</h3>
+                </div>
+                <p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
+                    ใช้ขุมพลัง AI จดจำใบหน้าและหมายเลขบิบ เพื่อให้นักวิ่งค้นหาภาพของตัวเองได้ในไม่กี่วินาที
+                </p>
+                <a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-purple-600 hover:gap-3 transition-all"
+                    href="https://photo.action.in.th/" target="_blank">
+                    เข้าสู่ระบบค้นหาภาพ <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Result Card -->
+            <div
+                class="feature-card group bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sophisticated hover:border-green-100 transition-all duration-500 flex flex-col">
+                <img class="overflow-hidden rounded-2xl w-full object-cover" src="/img/Timing.png" alt="">
+                <br>
+                <div class="flex items-center gap-4 mb-5">
+                    <div
+                        class="icon-box w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center transition-transform duration-500 flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl font-light">timer</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Action Result</h3>
+                </div>
+                <p class="text-gray-500 mb-6 leading-relaxed font-light text-[15px]">
+                    เชื่อมต่อ Chip Timing รายงานผลทันที พร้อมระบบ e-Certificate สวยงามดาวน์โหลดได้ทันใจ
+                </p>
+                <a class="mt-auto inline-flex items-center gap-1.5 font-semibold text-sm text-green-600 hover:gap-3 transition-all"
+                    href="https://live.action.in.th/" target="_blank">
+                    เข้าสู่ระบบดูผลการแข่งขัน <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Detail Sections with Mockups -->
+    <section class="bg-gray-50/50 space-y-24 overflow-hidden">
+        <!-- Feature 1 -->
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex-1 space-y-8">
+                <div class="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase">Smart Register</div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">จัดการง่ายตั้งแต่รับสมัคร</h2>
+                <p class="text-gray-600 text-lg leading-relaxed font-light">
+                    ระบบหลังบ้านที่ทรงพลัง ช่วยให้คุณเห็นข้อมูลสรุปยอดผู้สมัครแบบวินาทีต่อวินาที
+                    จัดการเรื่องการเงินที่ซับซ้อนให้เป็นเรื่องง่ายด้วยระบบตรวจสอบสลิปอัตโนมัติ
+                </p>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">check</span>
+                        </div>
+                        <span class="font-medium text-gray-700">ระบบชำระเงินและยืนยันยอดอัตโนมัติ 100%</span>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">insights</span>
+                        </div>
+                        <span class="font-medium text-gray-700">แดชบอร์ดสรุปสถิติ ไซส์เสื้อ และรายได้แบบ
+                            Real-time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="mockup-gradient-1 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
+                    <div
+                        class="bg-white rounded-xl shadow-lg border border-blue-50 w-full aspect-[4/3] p-6 space-y-4 transform group-hover:scale-[1.02] transition-transform duration-700">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="h-4 w-32 bg-gray-100 rounded-full"></div>
+                            <div class="h-8 w-8 bg-blue-500 rounded-lg"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="h-24 bg-blue-50 rounded-xl flex flex-col justify-center px-4">
+                                <div class="h-2 w-12 bg-blue-200 rounded-full mb-3"></div>
+                                <div class="h-4 w-20 bg-blue-400 rounded-full"></div>
+                            </div>
+                            <div class="h-24 bg-gray-50 rounded-xl flex flex-col justify-center px-4">
+                                <div class="h-2 w-12 bg-gray-200 rounded-full mb-3"></div>
+                                <div class="h-4 w-16 bg-gray-300 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3 pt-4">
+                            <div class="h-3 w-full bg-gray-100 rounded-full"></div>
+                            <div class="h-3 w-[90%] bg-gray-100 rounded-full"></div>
+                            <div class="h-3 w-[70%] bg-gray-100 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-400/20 blur-2xl rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
+            <div class="flex-1 space-y-8 text-right lg:text-left">
+                <div class="text-purple-600 font-bold tracking-[0.2em] text-sm uppercase">AI Technology</div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">ค้นหาภาพไวด้วยระบบ AI</h2>
+                <p class="text-gray-600 text-lg leading-relaxed font-light">
+                    หมดปัญหาการเลื่อนหารูปภาพทีละใบ ระบบประมวลผล AI ตรวจจับใบหน้าและหมายเลขบิบได้อย่างแม่นยำ
+                    พร้อมระบบจำหน่ายภาพที่ง่ายที่สุด
+                </p>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-center lg:flex-row-reverse gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:-translate-x-2 lg:hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">camera</span>
+                        </div>
+                        <span class="font-medium text-gray-700">ตรวจจับใบหน้าและเบอร์บิบแม่นยำสูง แม้แสงน้อย</span>
+                    </div>
+                    <div
+                        class="flex items-center lg:flex-row-reverse gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:-translate-x-2 lg:hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">cloud_download</span>
+                        </div>
+                        <span class="font-medium text-gray-700">สั่งซื้อและรับภาพความละเอียดสูงทันทีผ่านระบบ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="mockup-gradient-2 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
+                    <div
+                        class="bg-white rounded-xl shadow-lg overflow-hidden w-full aspect-[4/3] transform group-hover:scale-[1.02] transition-transform duration-700 relative">
+                        <div class="p-4 border-b border-gray-50 flex gap-2">
+                            <div
+                                class="w-full h-8 bg-gray-50 rounded-lg border border-gray-100 flex items-center px-3 gap-2">
+                                <span class="material-symbols-outlined text-sm text-gray-400">search</span>
+                                <div class="h-2 w-20 bg-gray-200 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 p-3">
+                            <div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
+                                <img alt="mockup" class="object-cover w-full h-full opacity-60"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMz7SUXQXyBrBayq9u2mquGQAa99eKffYRe-DUOWlPWM4GEfXAgtw7zHPbgQQEJxVtAI2sA-MKWXPmEZuBfRtHZb0Kp29mzAi8SqOHQ_n7_fOI5DqUuyE4NqPY2j7gZRMEcbkzmGZkY53KuDCS2dd-I682KFP7hjvM7GoLzW6AyUZnhSwaBkMvxvcbi1zqGR_gfhCMHg6zeF8fTFAO1bxO8XlLYHD1OUqEtBn4JOPzXkJ5Jiw-nAx9j_6IMPH84d4YIc-69gbWqs" />
+                                <div class="absolute inset-0 border-2 border-purple-400 m-2 rounded"></div>
+                            </div>
+                            <div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
+                                <img alt="mockup" class="object-cover w-full h-full opacity-60"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsQaUAdF7xYVlfiA6eqJY63gTugYRPmyERDeShRyxjFiDptbECyJej5V-cOqJbzLQ6v2PbmFbAnVGi0BwByDrURhbBHmZBUJJXKFphXUBmQpLYWq6IxFUHqytnOPwV5rUh89MbbL_dLPkOoruWeYL-asKxj6iIdUisfm3YND1zKGSvwmS_OlBDrES0e0dy-HBeP8fDyBgMqKsSgGm8MQBCOwrSH40Z9M8dYO3FI6dSVFKNg6269sswVD-F5_XQaEIMseIRI8wyxDc" />
+                                <div class="absolute inset-0 border-2 border-purple-400 m-2 rounded"></div>
+                            </div>
+                            <div class="aspect-square bg-gray-100 rounded-lg relative overflow-hidden">
+                                <img alt="mockup" class="object-cover w-full h-full opacity-60"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5MlpXshD3VGL5eGH808EZdi2YEry7Iz404aeUk37OHNsC-tO40JbSFkLqduBe6B3vE-5SNkfLVfsTUEMnfuFUVfGnoPqfvYFIBe3X7uV1-M7dsthwxm5FFiWt5GKnJDVrvFYjXds9JVWWZcV1n9hnNPU1KezxZ6QfFw5nKZRObupGVigcLWo9wMDD66em0TKn68cv0uuKuwNp7wisgQjegn7JJMQvphUI8WMHRvXTKE0EP8w5i6amzTeSEKL1UUU9TYU_YplGIc8" />
+                            </div>
+                            <div class="aspect-square bg-gray-100 rounded-lg"></div>
+                            <div class="aspect-square bg-gray-100 rounded-lg"></div>
+                            <div class="aspect-square bg-gray-100 rounded-lg"></div>
+                        </div>
+                        <div
+                            class="absolute top-24 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-3 py-1.5 rounded-full text-[10px] font-bold shadow-lg animate-bounce">
                             AI Detected: Bib #429
                         </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Feature 3 -->
-<div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
-<div class="flex-1 space-y-8">
-<div class="text-green-600 font-bold tracking-[0.2em] text-sm uppercase">Real-time Result</div>
-<h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">รู้ผลทันทีเมื่อเข้าเส้นชัย</h2>
-<p class="text-gray-600 text-lg leading-relaxed font-light">
-    ยกระดับมาตรฐานด้วยระบบจับเวลาที่เป็นสากล นักวิ่งเช็คเวลา Net Time และ Gun Time ได้ทันที พร้อมอันดับในรุ่นอายุผ่านระบบออนไลน์
-</p>
-<div class="space-y-4">
-<div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
-<div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">update</span>
-</div>
-<span class="font-medium text-gray-700">อัปเดตสถิติและอันดับแบบ Real-time</span>
-</div>
-<div class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
-<div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-lg">workspace_premium</span>
-</div>
-<span class="font-medium text-gray-700">ดาวน์โหลด e-Certificate สวยงามทันที</span>
-</div>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="mockup-gradient-3 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
-<div class="bg-white rounded-xl shadow-lg overflow-hidden w-full aspect-[4/3] p-6 transform group-hover:scale-[1.02] transition-transform duration-700">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">1st</div>
-<div>
-<div class="h-3 w-32 bg-gray-900 rounded-full mb-1"></div>
-<div class="h-2 w-20 bg-gray-300 rounded-full"></div>
-</div>
-</div>
-<div class="space-y-4">
-<div class="flex justify-between p-3 bg-green-50 rounded-lg">
-<div class="h-3 w-16 bg-green-200 rounded-full"></div>
-<div class="h-3 w-20 bg-green-600 rounded-full"></div>
-</div>
-<div class="flex justify-between p-3 border-b border-gray-50">
-<div class="h-2 w-24 bg-gray-100 rounded-full"></div>
-<div class="h-2 w-16 bg-gray-100 rounded-full"></div>
-</div>
-<div class="flex justify-between p-3 border-b border-gray-50">
-<div class="h-2 w-24 bg-gray-100 rounded-full"></div>
-<div class="h-2 w-16 bg-gray-100 rounded-full"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer / CTA -->
-<footer class="bg-white pt-20 pb-12 px-4">
-<div class="max-w-6xl mx-auto">
-<div class="bg-blue-600 rounded-[3rem] p-10 md:p-20 text-center text-white mb-24 shadow-sophisticated relative overflow-hidden">
-<div class="relative z-10">
-<h3 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">พร้อมยกระดับงานวิ่งของคุณหรือยัง?</h3>
-<p class="text-blue-100 mb-10 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-    ปรึกษาทีมงาน Action วันนี้ เพื่อปรับแต่งระบบที่เข้ากับงานของคุณที่สุด ไม่ว่าจะเป็นงานระดับภูมิภาคหรืองานระดับประเทศ
-</p>
-<a class="inline-block bg-white text-blue-600 px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition-all shadow-xl" href="mailto:action.in.th@gmail.com">
-    ติดต่อทีมงานของเรา
-</a>
-</div>
-<div class="absolute -top-20 -left-20 w-80 h-80 bg-blue-500 rounded-full opacity-40 blur-3xl"></div>
-<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-700 rounded-full opacity-40 blur-3xl"></div>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-<div class="lg:col-span-2">
-<div class="flex items-center gap-2 mb-6">
-<img alt="Action Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1nZLArJ80x7GzPD09tU0wN5irLwLNWVBnLkrSSLuPIOqJDZtu5001X6a-_4EjfrUoo1WCZxLm-HMS8usf_MFq27hTB2k9oOzfLZCYFOmvf-oPbGjgvzLn_FacEb71mMaUorTvYwfcmhTPK8ZmSrHFUu3j2-mJF-IkWxCdIvdcuYgR5I6P-fP73vOFhljivBhg63vqXk2DBlXX-chfSeOfcIjEdI0AXdMbSDK4Yh8htCIqvFjytKkafYAqdgf3HV04sEzXDKLpl64"/>
-<span class="text-xl font-bold tracking-tight text-gray-900">ACTION</span>
-</div>
-<p class="text-gray-500 max-w-sm leading-relaxed font-light">
-    The ultimate system to assist in sports competition management. ครบเครื่องเรื่องการแข่งขัน จบในที่เดียว มั่นคง รวดเร็ว และแม่นยำ
-</p>
-</div>
-<div>
-<h4 class="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">ติดต่อเรา</h4>
-<ul class="space-y-4 text-gray-500 font-light text-[15px]">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-blue-500 text-sm">mail</span>
-    action.in.th@gmail.com
-</li>
-<li class="flex items-start gap-2 leading-relaxed">
-<span class="material-symbols-outlined text-blue-500 text-sm mt-1">location_on</span>
-    13/27, Moo.4, Sai Noi, Nonthaburi 11150
-</li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">บริการของเรา</h4>
-<ul class="space-y-3 text-gray-500 font-light text-[15px]">
-<li><a class="hover:text-blue-600 transition" href="https://register.action.in.th/">Action Register</a></li>
-<li><a class="hover:text-purple-600 transition" href="https://photo.action.in.th/">Action Photo</a></li>
-<li><a class="hover:text-green-600 transition" href="https://live.action.in.th/">Action Result</a></li>
-</ul>
-</div>
-</div>
-<div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm border-t border-gray-100 pt-10 gap-6">
-<p>© 2024 Action - Sports Management Platform. All Rights Reserved.</p>
-<div class="flex gap-8">
-<a class="hover:text-gray-900 transition-colors" href="#">Terms of Use</a>
-<a class="hover:text-gray-900 transition-colors" href="#">Privacy Policy</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('opacity-100', 'translate-y-0');
-                entry.target.classList.remove('opacity-0', 'translate-y-10');
-            }
-        });
-    }, { threshold: 0.1 });
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex-1 space-y-8">
+                <div class="text-green-600 font-bold tracking-[0.2em] text-sm uppercase">Real-time Result</div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">รู้ผลทันทีเมื่อเข้าเส้นชัย</h2>
+                <p class="text-gray-600 text-lg leading-relaxed font-light">
+                    ยกระดับมาตรฐานด้วยระบบจับเวลาที่เป็นสากล นักวิ่งเช็คเวลา Net Time และ Gun Time ได้ทันที
+                    พร้อมอันดับในรุ่นอายุผ่านระบบออนไลน์
+                </p>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">update</span>
+                        </div>
+                        <span class="font-medium text-gray-700">อัปเดตสถิติและอันดับแบบ Real-time</span>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-soft border border-gray-100/50 transition-transform hover:translate-x-2">
+                        <div
+                            class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="material-symbols-outlined text-lg">workspace_premium</span>
+                        </div>
+                        <span class="font-medium text-gray-700">ดาวน์โหลด e-Certificate สวยงามทันที</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div
+                    class="mockup-gradient-3 rounded-[3rem] p-8 md:p-12 shadow-sophisticated relative overflow-hidden group">
+                    <div
+                        class="bg-white rounded-xl shadow-lg overflow-hidden w-full aspect-[4/3] p-6 transform group-hover:scale-[1.02] transition-transform duration-700">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                                1st</div>
+                            <div>
+                                <div class="h-3 w-32 bg-gray-900 rounded-full mb-1"></div>
+                                <div class="h-2 w-20 bg-gray-300 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between p-3 bg-green-50 rounded-lg">
+                                <div class="h-3 w-16 bg-green-200 rounded-full"></div>
+                                <div class="h-3 w-20 bg-green-600 rounded-full"></div>
+                            </div>
+                            <div class="flex justify-between p-3 border-b border-gray-50">
+                                <div class="h-2 w-24 bg-gray-100 rounded-full"></div>
+                                <div class="h-2 w-16 bg-gray-100 rounded-full"></div>
+                            </div>
+                            <div class="flex justify-between p-3 border-b border-gray-50">
+                                <div class="h-2 w-24 bg-gray-100 rounded-full"></div>
+                                <div class="h-2 w-16 bg-gray-100 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer / CTA -->
+    <footer class="bg-white pt-20 pb-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div
+                class="bg-blue-600 rounded-[3rem] p-10 md:p-20 text-center text-white mb-24 shadow-sophisticated relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">พร้อมยกระดับงานวิ่งของคุณหรือยัง?</h3>
+                    <p class="text-blue-100 mb-10 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                        ปรึกษาทีมงาน Action วันนี้ เพื่อปรับแต่งระบบที่เข้ากับงานของคุณที่สุด
+                        ไม่ว่าจะเป็นงานระดับภูมิภาคหรืองานระดับประเทศ
+                    </p>
+                    <a class="inline-block bg-white text-blue-600 px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition-all shadow-xl"
+                        href="https://lin.ee/qRtC8HK">
+                        ติดต่อทีมงานของเรา
+                    </a>
+                </div>
+                <div class="absolute -top-20 -left-20 w-80 h-80 bg-blue-500 rounded-full opacity-40 blur-3xl"></div>
+                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-blue-700 rounded-full opacity-40 blur-3xl"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img alt="/img/ACTION LOGO 1 Black.png" class="h-8 w-auto"
+                            src="/img/ACTION LOGO 1 Black.png" />
 
-    document.querySelectorAll('.feature-card, section h2, .max-w-6xl > div').forEach(el => {
-        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-        observer.observe(el);
-    });
-</script>
-</body></html>
+                    </div>
+                    
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">ระบบจัดงานวิ่งครบจบในที่เดียว</h2>
+                        <p class="text-gray-500 max-w-sm leading-relaxed font-light">
+                            สมัครง่าย รองรับคนจำนวนมาก พร้อมชำระเงินอัตโนมัติ และจับเวลาแม่นยำด้วย Chip Timing
+                            ค้นหารูปด้วย AI และรู้ผลการแข่งขันแบบ Real-time ทันทีหลังเข้าเส้นชัย
+                        </p>
+                </div>
+                <div id="contact">
+                    <h4 class="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">ติดต่อเรา</h4>
+                    <ul class="space-y-4 text-gray-500 font-light text-[15px]">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-blue-500 text-sm">mail</span>
+                            action.in.th@gmail.com
+                        </li>
+                        <li class="flex items-start gap-2 leading-relaxed">
+                            <span class="material-symbols-outlined text-blue-500 text-sm mt-1">location_on</span>
+                            13/27, Moo.4, Sai Noi, Nonthaburi 11150
+                        </li>
+
+                        <!-- line icon -->
+                        <li class="flex items-center gap-4">
+                            <a href="https://lin.ee/qRtC8HK"><img width="50" height="50" src="/img/Line-Icon.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+                            <a href="https://www.facebook.com/action.in.th"><img width="50" height="50" src="/img/FaceBook-Icon.png" alt="Facebook" height="36" border="0"></a>
+                        </li>
+
+                        
+                        
+
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 uppercase tracking-wider text-sm">บริการของเรา</h4>
+                    <ul class="space-y-3 text-gray-500 font-light text-[15px]">
+                        <li><a class="hover:text-blue-600 transition" href="https://register.action.in.th/">Action
+                                Register</a></li>
+                        <li><a class="hover:text-purple-600 transition" href="https://photo.action.in.th/">Action
+                                Photo</a></li>
+                        <li><a class="hover:text-green-600 transition" href="https://live.action.in.th/">Action
+                                Result</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm border-t border-gray-100 pt-10 gap-6">
+                <p>© 2024 Action - Sports Management Platform. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-gray-900 transition-colors" href="#">Terms of Use</a>
+                    <a class="hover:text-gray-900 transition-colors" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, section h2, .max-w-6xl > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
